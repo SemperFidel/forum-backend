@@ -32,3 +32,5 @@ dependencyResolutionManagement {
     }
 }
 include("event-bus")
+include("members")
+include("shared")
