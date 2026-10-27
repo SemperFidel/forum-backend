@@ -1,0 +1,32 @@
+[versions]
+kotlin = "2.4.21"
+koin = "4.2.2"
+s3 = "1.9.23"
+ktor = "3.6.0"
+exposed = "1.6.0"
+postgres = "1.1.3.RELEASE"
+search = "2.8.7"
+rethis = "0.4.4"
+coroutines = "1.11.0"
+serialization = "1.12.0"
+
+[libraries]
+coroutines-core = {module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines"}
+serialization-json = {module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization"}
+
+ktor-server-core = {module = "io.ktor:ktor-server-core", version.ref = "ktor"}
+ktor-server-cio = {module = "io.ktor:ktor-server-cio", version.ref = "ktor"}
+ktor-server-content-negotiation = {module = "io.ktor:ktor-server-content-negotiation", version.ref = "ktor"}
+ktor-serialization-json = {module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor"}
+koin-core = {module = "io.insert-koin:koin-core", version.ref = "koin"}
+koin-ktor = {module = "io.insert-koin:koin-ktor", version.ref = "koin"}
+
+exposed-r2dbc = {module = "org.jetbrains.exposed:exposed-r2dbc", version.ref = "exposed"}
+postgresql-r2bdc = {module = "org.postgresql:r2dbc-postgresql", version.ref = "postgres"}
+search-client = {module = "com.jillesvangurp:search-client", version.ref = "search"}
+rethis = {module = "eu.vendeli:rethis-shared", version.ref = "rethis"}
+s3 = {module = "aws.sdk.kotlin:s3", version.ref = "s3"}
+
+[plugins]
+kotlin-jvm = {id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin"}
+serialization-plugin = {id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin"}
