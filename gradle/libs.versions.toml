@@ -9,10 +9,14 @@ search = "2.8.7"
 rethis = "0.4.4"
 coroutines = "1.11.0"
 serialization = "1.12.0"
+collections-immutable = "0.5.2"
+sqlx4k = "1.17.0"
 
 [libraries]
 coroutines-core = {module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines"}
+serialization-core = {module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version.ref = "serialization"}
 serialization-json = {module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization"}
+collections-immutable = {module = "org.jetbrains.kotlinx:kotlinx-collections-immutable", version.ref = "collections-immutable"}
 
 ktor-server-core = {module = "io.ktor:ktor-server-core", version.ref = "ktor"}
 ktor-server-cio = {module = "io.ktor:ktor-server-cio", version.ref = "ktor"}
@@ -25,6 +29,8 @@ exposed-r2dbc = {module = "org.jetbrains.exposed:exposed-r2dbc", version.ref = "
 postgresql-r2bdc = {module = "org.postgresql:r2dbc-postgresql", version.ref = "postgres"}
 search-client = {module = "com.jillesvangurp:search-client", version.ref = "search"}
 rethis = {module = "eu.vendeli:rethis-shared", version.ref = "rethis"}
+sqlx4k = {module = "io.github.smyrgeorge:sqlx4k", version.ref = "sqlx4k"}
+sqlx4k-postgres = {module = "io.github.smyrgeorge:sqlx4k-postgres", version.ref = "sqlx4k"}
 s3 = {module = "aws.sdk.kotlin:s3", version.ref = "s3"}
 
 [plugins]

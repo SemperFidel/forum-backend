@@ -12,7 +12,6 @@ repositories {
 
 dependencies {
     implementation(libs.coroutines.core)
-
 }
 
 kotlin {
